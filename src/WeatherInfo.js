@@ -10,12 +10,12 @@ export default function WeatherInfo(props) {
           <div className="clearfix d-flex justify-content-start">
             <img
               className="float-left"
-              src={weatherData.iconUrl}
-              alt={weatherData.description}
+              src={props.data.iconUrl}
+              alt={props.data.description}
             />{" "}
             <div className="float-left">
               <span className="temperature">
-                {Math.round(weatherData.temperature)}
+                {Math.round(props.data.temperature)}
               </span>
               <span className="unit">°C | F</span>
             </div>
@@ -23,8 +23,8 @@ export default function WeatherInfo(props) {
         </div>
         <div className="col-4">
           <ul>
-            <li>Humidity: {weatherData.humidity}%</li>
-            <li>Wind: {weatherData.wind}kph</li>
+            <li>Humidity: {props.data.humidity}%</li>
+            <li>Wind: {props.data.wind}kph</li>
           </ul>
         </div>
         <div className="col-4 position-relative">
@@ -35,7 +35,7 @@ export default function WeatherInfo(props) {
                 <FormattedDate date={props.data.date} />
               </li>
               <li className="current-conditions text-capitalize">
-                {weatherData.description}
+                {props.data.description}
               </li>
             </ul>
           </div>
