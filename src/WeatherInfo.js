@@ -4,7 +4,7 @@ import "./Weather.css";
 export default function WeatherInfo(props) {
   return (
     <div className="weatherInfo">
-      <h1>Cardiff</h1>
+      <h1>{props.data.city}</h1>
       <div className="row mt-3 mb-4">
         <div className="col-4">
           <div className="clearfix d-flex justify-content-start">
