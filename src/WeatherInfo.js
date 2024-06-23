@@ -40,12 +40,6 @@ export default function WeatherInfo(props) {
           </div>
         </div>
       </div>
-      <div className="weather-links">
-        <span>
-          <a href="">Temperature</a> | <a href=""> Precipitation </a> |{" "}
-          <a href="">Wind</a>
-        </span>
-      </div>
     </div>
   );
 }
