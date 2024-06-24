@@ -20,8 +20,12 @@ export default function WeatherInfo(props) {
         </div>
         <div className="col-4">
           <ul>
-            <li>Humidity: {props.data.humidity}%</li>
-            <li>Wind: {props.data.wind}kph</li>
+            <li>
+              Humidity: <strong>{props.data.humidity}%</strong>
+            </li>
+            <li>
+              Wind: <strong>{props.data.wind}kph</strong>
+            </li>
           </ul>
         </div>
         <div className="col-4 position-relative">
